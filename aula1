@@ -1,0 +1,76 @@
+Future<void> main() async {
+  //print, envia um texto para o console
+  print('hello world');
+  print('-----APPII - aula-----');
+  
+  var nome = "Paula ";
+  String sobrenome = "Silva";
+  
+  print('$nome $sobrenome');
+  
+  
+  
+  const double valor_de_PI = 3.141592653589793;
+  final DateTime dataEHora = DateTime.now();
+  
+  
+
+  print(valor_de_PI);
+  print(dataEHora);
+  
+  dynamic valor = 'Um texto...';
+  print (valor is String);
+  
+  valor = 10;
+  print(valor is int);
+  
+  print('Área do retangulo 5.6 x 7.4');
+  print(areaRetangulo(5.6,7.4));
+  
+  print('Área do Trapézio');
+  print (areaTrapezio(5.7,4.3,3.4));
+}
+
+double areaRetangulo(double b, double a) {
+  return b * a;
+}
+
+double areaTrapezio(
+  double bMenor,
+  double bMaior, 
+  double a
+) {
+  return((bMaior + bMenor) * a) / 2;
+}
+
+
+
+
+
+import 'dart:math';
+
+double calcularDelta(double a, double b, double c) {
+  return b * b - 4 * a * c;
+}
+
+void calcularRaizes(double a, double b, double delta) {
+  if (delta >= 0) {
+    double x1 = (-b + sqrt(delta)) / (2 * a);
+    double x2 = (-b - sqrt(delta)) / (2 * a);
+    print("Raiz x1: $x1");
+    print("Raiz x2: $x2");
+  } else {
+    print("Não existem raízes reais.");
+  }
+}
+
+void main() {
+  double a = 1;
+  double b = -3;
+  double c = 2;
+
+  double delta = calcularDelta(a, b, c);
+  print("Delta: $delta");
+
+  calcularRaizes(a, b, delta);
+}
