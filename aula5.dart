@@ -69,3 +69,26 @@ class MyHome extends StatelessWidget {
     );
   }
 }
+
+
+MAIN:
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Aula 5',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 102, 5, 151),
+        ),
+      ),
+      home: MyHome(),
+    );
+  }
+}
