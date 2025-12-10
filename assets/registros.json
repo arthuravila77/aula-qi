@@ -1,0 +1,32 @@
+[
+    {
+        "nome": "Dioclésio Antunes",
+        "email": "didi.tutu@gmail.com",
+        "telefone": "11-987654321"
+    },
+    {
+        "nome": "Jean Soares",
+        "email": "jeansoares@gmail.com",
+        "telefone": "11-987654312"
+    },
+    {
+        "nome": "Arthur Portal",
+        "email": "arthurportal@gmail.com",
+        "telefone": "51-977654321"
+    },
+    {
+        "nome": "Vinicius Arens",
+        "email": "viniarens@gmail.com",
+        "telefone": "11-987564321"
+    },
+    {
+        "nome": "Paulo Henrique",
+        "email": "paulomoser@gmail.com",
+        "telefone": "51-987654123"
+    },
+    {
+        "nome": "Antonia Ferreira",
+        "email": "antoniaferreira@gmail.com",
+        "telefone": "11-981234567"
+    }
+]

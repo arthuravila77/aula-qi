@@ -1,7 +1,18 @@
+import 'package:api_flutter/pages/registros_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/myapp.dart';
 
 void main() {
-  runApp(Myapp());
+  runApp(const MainApp());
 }
 
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: RegistrosPage()
+    );
+  }
+}
